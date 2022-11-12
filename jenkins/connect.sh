@@ -1,2 +1,2 @@
 #!/bin/sh
-docker run -it my_jenkins:v1.0.0 bash
+docker exec -it my_jenkins bash
