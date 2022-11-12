@@ -1,0 +1,9 @@
+#!/bin/sh
+docker run \
+  --rm \
+  --name gitcmd \
+  -u=$(id -u):$(id -g) \
+  -w /tmp \
+  -v ${PWD}:/tmp \
+  bitnami/git:2.38.1 \
+  git $@
