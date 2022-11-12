@@ -4,6 +4,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN \
   apt-get update; \
   apt-get install -y wget; \
+  apt-get install -y vim; \
   apt-get install -y git; \
   apt-get install -y ansible openjdk-19-jdk; \
   groupadd -g 1000 jenkins; \
